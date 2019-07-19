@@ -24,7 +24,7 @@ Topics taught in this course are the following:-
 19) Backtracking
 20) Dynamic Programming
 
-Tip: I use Google's C++ Style for coding. You can also pick any style and start coding so that your code can be easily interpreted by others. 
+**Tip:** I use Google's C++ Style for coding. You can also pick any style and start coding so that your code can be easily interpreted by others. 
 Here's the link: https://google.github.io/styleguide/cppguide.html
 
 
