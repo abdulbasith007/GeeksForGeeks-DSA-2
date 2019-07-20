@@ -1,0 +1,86 @@
+Main page: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#MathematicalAlgorithms
+
+
+Solve the following problems:
+1) Find the absolute value of a number:
+2) Convert Celsius to Fahrenheit
+3) Quadratic Equation Roots
+4) Fatorial of a number
+5) Digits in Factorial
+6) GP Term
+7) Primality Test
+8) Exactly 3 Divisors
+9) Mean and Median
+10) Addition under Modulo
+11) Multiplication under Modulo
+12) Modular Multiplicative Inverse
+
+
+First try yourself, if you won't able to do then only proceed to solutions:- 
+
+Note:- Solutions include only the functions
+
+++++++++++++++  
++ Solutions: +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1) Find the absolute value of a number:
+
+int absolute(int x) {
+    if (x<0){
+        return -x;
+    }
+    else{
+        return x;
+    }
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2) Convert Celsius to Fahrenheit:
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+3) Quadratic Equation Roots:
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+4) Fatorial of a number:
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+5) Digits in Factorial:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+6) GP Term:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+7) Primality Test:
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+8) Exactly 3 Divisors:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+9) Mean and Median:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+10) Addition under Modulo:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+11) Multiplication under Modulo:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+12) Modular Multiplicative Inverse:
+
+
+
+
