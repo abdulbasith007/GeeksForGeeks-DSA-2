@@ -1,0 +1,16 @@
+Main Page: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#AnalysisofAlgorithms
+
+**If you've enough time then you can refer the above main page to get started for Data Structures and Algorithms
+else the following topics works well.**
+
+
+1) Asymptotic Analysis: https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/
+2) Worst, Average and Best Case: https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/
+3) Asymptotic Notations: https://www.geeksforgeeks.org/analysis-of-algorithms-set-3asymptotic-notations/
+4) Solving Recurrences: https://www.geeksforgeeks.org/analysis-algorithm-set-4-master-method-solving-recurrences/
+5) Amortized Algorithms: https://www.geeksforgeeks.org/analysis-algorithm-set-5-amortized-analysis-introduction/
+6) Space Complexity: https://www.geeksforgeeks.org/g-fact-86/
+
+**By this time you should understand the significance of Big O and the difference between Big O, Omega and Theta and where to use them. 
+
+**How to find out the time complexities of recursion algorithms?
