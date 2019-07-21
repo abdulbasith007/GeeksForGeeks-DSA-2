@@ -87,6 +87,25 @@ long long factorial (int N)
 
 5) Digits in Factorial:
 
+def digitsInFactorial(N):
+    
+    res = math.factorial(N)
+    
+    
+    digits = 0
+    
+    
+    while res > 10000000000:
+        res = res//10000000000 
+        digits += 10
+    while res > 0:
+        res = res // 10
+        digits += 1
+        
+    return digits
+
+        
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 6) GP Term:
