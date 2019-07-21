@@ -39,6 +39,9 @@ int absolute(int x) {
 
 2) Convert Celsius to Fahrenheit:
 
+int cToF(C):
+    return (C* 9/5) + 32
+
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
