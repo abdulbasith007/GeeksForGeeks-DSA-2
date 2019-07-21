@@ -71,6 +71,17 @@ void quadraticRoots(int a,int b, int c)
 
 4) Fatorial of a number:
 
+#define ll long long                  // To save time we can define long long as 'll'
+long long factorial (int N)
+{
+    ll res = 1;
+    for (ll i = N; i > 0; i--){
+        
+        res *= i;
+    }
+    return res;
+}
+
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
