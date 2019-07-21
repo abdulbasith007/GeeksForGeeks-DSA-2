@@ -44,6 +44,23 @@ int absolute(int x) {
 
 3) Quadratic Equation Roots:
 
+void quadraticRoots(int a,int b, int c)
+{
+   int D = (b*b) - 4*a*c;                           
+   
+   if (D < 0){
+       printf("Imaginary");
+   }
+   else if (D == 0){
+       int x = floor(((-b) + sqrt(D))/(2*a)); 
+       printf("%d %d", x, x);
+   }
+   else if (D > 0){
+       int x = floor(((-b) + sqrt(D))/(2*a)); 
+       int y = floor(((-b) - sqrt(D))/(2*a)); 
+       printf("%d %d", x, y);
+   }  
+}
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
