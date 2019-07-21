@@ -47,6 +47,8 @@ int cToF(C):
 
 3) Quadratic Equation Roots:
 
+//https://www.mathgoodies.com/calculators/quadratic_equations - Roots of a quadratic equation calculator
+
 void quadraticRoots(int a,int b, int c)
 {
    int D = (b*b) - 4*a*c;                           
