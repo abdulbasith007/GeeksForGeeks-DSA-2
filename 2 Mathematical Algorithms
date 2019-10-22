@@ -105,7 +105,25 @@ def digitsInFactorial(N):
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-7) Primality Test:
+7) Primality Test: Generating a range of prime no's these can be done in two ways:
+1) Using for loops and checking whether a number is divisible by one and itself. 
+2) Using Sieve of Erastothenes
+
+__1st method:-__ 
+
+import math
+def prime(n):
+  print("Prime")
+  for i in range(2,n):
+    cnt = 0
+    for j in range(1, math.floor(math.sqrt(n))):
+      if i%j == 0:
+        cnt += 1
+                
+    if cnt== 1:
+      print(i)
+    
+prime(int(input()))
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
