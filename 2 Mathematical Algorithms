@@ -87,6 +87,8 @@ long long factorial (int N)
 
 5) Digits in Factorial:
 
+__BRUTE FORCE METHOD:__
+
 def digitsInFactorial(N):    
     res = math.factorial(N)  
     digits = 0   
@@ -95,6 +97,26 @@ def digitsInFactorial(N):
         digits += 1
         
     return digits
+
+
+__LOGARITHMIC METHOD:__
+
+import math
+def factdig(n):
+  if n <0:
+    return 0
+  if n <= 1:
+    return 1
+  
+  d = 0
+  while n > 0:
+    d += math.log10(n)
+    n -= 1  
+
+  return math.floor(d+1)
+
+print(factdig(42))
+
 
         
 
