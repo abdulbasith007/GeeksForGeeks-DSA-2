@@ -1,4 +1,5 @@
 Main page: https://www.geeksforgeeks.org/fundamentals-of-algorithms/#MathematicalAlgorithms
+I recomment to see this program before trying 14 and 15th problem: https://repl.it/repls/LonelyAdventurousPagerecognition
 
 
 Solve the following problems:
@@ -15,6 +16,8 @@ Solve the following problems:
 11) Multiplication under Modulo
 12) Modular Multiplicative Inverse
 13) Counting number of set bits in a number
+14) In an array, all numbers are evenly repeated  except one. FInd that number
+15) In an array, all numbers are evenly repeated except two. Find those numbers
 
 
 First try yourself, if you won't able to do then only proceed to solutions:- 
@@ -196,4 +199,35 @@ while n > 0:
   
 print(res)
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+14) In an array, all numbers are evenly repeated  except one. FInd that number
 
+def solve(arr):
+  res = 0
+  for i in arr:
+    res ^= i
+
+  return res
+
+print(solve([3,3,4,4,5]))
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+15) In an array, all numbers are evenly repeated except two. Find those numbers
+
+def solve(arr, n):
+  res = 0
+  for i in arr:
+    res ^= i
+  
+  # Finding rightmost set bit
+  rm = res & (~(res-1))
+  x,y = 0,0
+
+  for i in arr:
+    if i&rm:
+      x ^= i
+    else:
+      y ^= i
+  return x,y
+  
+print(solve([2,3,3,4,4,5], 6))
