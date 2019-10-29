@@ -219,6 +219,25 @@ def exactly3Divisors(n):
 
 9) Mean and Median:
 
+def median(A,N):
+    
+    A.sort()
+    
+    if N&1:
+        return A[N//2]
+    return (A[N//2] + A[(N//2)-1])//2  # For even length, median is the average of the middle two numbers
+    
+    
+def mean(A,N):
+    x = len(A)
+    sum = 0
+    
+    for i in range(x):
+        sum += A[i]
+        
+    return sum//x
+        
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 10) Addition under Modulo:
 
