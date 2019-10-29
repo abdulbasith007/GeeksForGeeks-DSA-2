@@ -20,7 +20,6 @@ Solve the following problems:
 15) In an array, all numbers are evenly repeated except two. Find those numbers
 16) GCD of two numbers
 17) Counting Trailing zeroes in factorial 
-18) Modulo Inverse 
 
 
 First try yourself, if you won't able to do then only proceed to solutions:- 
@@ -258,6 +257,14 @@ def multiplicationUnderModulo(a,b):
     
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 12) Modular Multiplicative Inverse:
+
+def modInverse(a,M):
+    for i in range(M):
+        if i*a % M == 1:
+            return i
+
+    return -1            # else return -1
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 13) counting set bits of a number:
 
@@ -337,19 +344,5 @@ def trailingZeroes(n):
 print(TrailingZeroes(100))
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-18) Modulo Inverse: 
-
-def gcd(a,b):
-  if a == 0:
-    return b
-  return gcd(b%a,a)
-
-def modI(a, M):
-  for i in range(M):
-    if i*a % M == 1:
-      return i
-
-print(modI(3,11))
 
 
