@@ -18,6 +18,7 @@ Solve the following problems:
 13) Counting number of set bits in a number
 14) In an array, all numbers are evenly repeated  except one. FInd that number
 15) In an array, all numbers are evenly repeated except two. Find those numbers
+16) GCD of two numbers
 
 
 First try yourself, if you won't able to do then only proceed to solutions:- 
@@ -231,3 +232,20 @@ def solve(arr, n):
   return x,y
   
 print(solve([2,3,3,4,4,5], 6))
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+16) GCD of two numbers:  Time Complexity = O(log(min(a,b)))
+
+def gcd(a,b):
+  if a==0:
+    return b
+
+  print(a,b, b%a)
+  return gcd(b%a,a)
+
+print(gcd(24,9)) --> 3
+
+HCF (GCD) of co-primes is 1
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
