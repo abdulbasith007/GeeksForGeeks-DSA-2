@@ -20,6 +20,7 @@ Solve the following problems:
 15) In an array, all numbers are evenly repeated except two. Find those numbers
 16) GCD of two numbers
 17) Counting Trailing zeroes in factorial 
+18) Modulo Inverse 
 
 
 First try yourself, if you won't able to do then only proceed to solutions:- 
@@ -256,7 +257,7 @@ For ex:- 5! = 120 So, trailing zero is 1
 
 
 import math
-def zero(n):
+def trailingZeroes(n):
   i = 5
   cnt = 0
 
@@ -266,4 +267,22 @@ def zero(n):
   
   return math.floor(cnt)
 
-print(zero(100))
+print(TrailingZeroes(100))
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+18) Modulo Inverse: 
+
+def gcd(a,b):
+  if a == 0:
+    return b
+  return gcd(b%a,a)
+
+def modI(a, M):
+  for i in range(M):
+    if i*a % M == 1:
+      return i
+
+print(modI(3,11))
+
+
