@@ -123,9 +123,7 @@ def factdig(n):
   return math.floor(d+1)
 
 print(factdig(42))
-
-
-        
+ 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -184,7 +182,38 @@ Sieve(5000)
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-8) Exactly 3 Divisors:
+8) Exactly 3 Divisors: 
+
+Tip: The only numbers whose square root is prime can only have 3 divisors i.e. i, prime square root and the number itself
+
+For Example: For 4: 1, sqrt(4) = 2, 4
+
+
+##Complete this function
+import math
+def exactly3Divisors(n):
+    prime = [True for i in range(n+1)]
+    p = 2
+    while p*p <= n:
+        for i in range(p*p, n, p):
+            prime[i] = False    
+        p += 1
+
+    dict = {}
+    for k in range(2,n):
+      if prime[k] == True:
+        dict[k] = 0
+
+    c = 0
+    for i in range(n+1):
+      x = math.sqrt(i)   
+      if x in dict:        
+        c += 1
+        
+    return c
+    
+    
+    
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
