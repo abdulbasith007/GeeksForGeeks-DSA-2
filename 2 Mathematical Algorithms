@@ -19,6 +19,7 @@ Solve the following problems:
 14) In an array, all numbers are evenly repeated  except one. FInd that number
 15) In an array, all numbers are evenly repeated except two. Find those numbers
 16) GCD of two numbers
+17) Counting Trailing zeroes in factorial 
 
 
 First try yourself, if you won't able to do then only proceed to solutions:- 
@@ -249,3 +250,20 @@ HCF (GCD) of co-primes is 1
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+17) Counting trailing zeroes in a factorial:
+Trailing zeroes are zeroes which comes at the end of factorial. 
+For ex:- 5! = 120 So, trailing zero is 1
+
+
+import math
+def zero(n):
+  i = 5
+  cnt = 0
+
+  while n/i > 0:
+    cnt += n/i
+    i *= 5
+  
+  return math.floor(cnt)
+
+print(zero(100))
