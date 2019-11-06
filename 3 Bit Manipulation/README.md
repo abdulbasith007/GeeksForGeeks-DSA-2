@@ -1,7 +1,7 @@
 This folder contains the following problems:
 
-1) Find first set bit
-2) Rightmost different bit
+1) [Find first set bit](https://github.com/FazeelUsmani/GeeksForGeeks-DSA-2/blob/master/3%20Bit%20Manipulation/3.1%20first%20set%20bit.py)
+2) [Rightmost different bit](https://github.com/FazeelUsmani/GeeksForGeeks-DSA-2/blob/master/3%20Bit%20Manipulation/3.2%20rightmost%20different%20bit.py)
 3) [Check whether k-th bit is set or not](https://github.com/FazeelUsmani/GeeksForGeeks-DSA-2/blob/master/3%20Bit%20Manipulation/3.3%20kth%20bit%20set.py)
 4) Count total set bits
 5) Bit Difference
