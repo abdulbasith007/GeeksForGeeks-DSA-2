@@ -12,3 +12,12 @@ This folder contains the following problems:
 10) Power of 2
 11) Swap all odd and even bits
 12) Maximum AND Value
+
+
+
+Remember the following while doing Bit Manipulation problems:
+1) log2(n & -n)+1 - > returns the position of the rightmost set bit
+2) log2(n)+1 -> returns the number of digits in the binary representation of the given number
+3) log10(n)+1 -> returns the number of digits in the number decimal number O(1) time
+4) x=x&(x-1) -> turn off the rightmost set bit
+5) 1<<n --=""> 1*(2^n) and all the term will be zero except the one
