@@ -1,3 +1,26 @@
+# Logic: Calculating 2's complement and using Bitwise AND 
+
+# For Example, n = 20
+
+# In binary,        20 = 10100
+# 2's complement of 20 = 1's complement + 1
+
+# 1's complement of 20 = Toggling all bits (I mean 1 to 0 and 0 to 1)
+# 1's complement of 20 = 01011
+
+# Adding 1 to 1's complement of 20 = 01011 (11)
+#                                    +   1 (+1) 
+# So, 2's complement of 20 is        01100 (12)        
+
+# Now, do a bitwise & with n
+#     10100 (20)
+#   & 01100 (12)
+# res 00100 (8)
+
+# log(8) will return 2 as the set bit postion is 2
+
+# Add 1 to it = 2+1 = 3
+
 import math
 
 for x in range(int(input())):
