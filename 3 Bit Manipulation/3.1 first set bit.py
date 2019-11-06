@@ -30,6 +30,21 @@ for x in range(int(input())):
     else:
         print(int(math.log2(n&-n)+1))
 
+        
+        
+# Aliter: (Another approach - Naive):
+
+def getFirstSetBit(n):
+    flag = True
+    c = 1
+    
+    while n:
+      if n & 1:
+        return c
+      c += 1
+      n = n >> 1
+    return 0
+        
 
 # Remember the following while doing Bit Manipulation problems:
 
