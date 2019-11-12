@@ -9,7 +9,7 @@ This folder contains the following problems:
 7) Longest consecutive 1's
 8) Gray Code
 9) Gray to Binary equivalent
-10) Power of 2
+10) [Power of 2](https://github.com/FazeelUsmani/GeeksForGeeks-DSA-2/blob/master/3%20Bit%20Manipulation/3.10%20Power%20of%20two.cpp)
 11) Swap all odd and even bits
 12) Maximum AND Value
 
