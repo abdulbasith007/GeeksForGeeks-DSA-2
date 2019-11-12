@@ -1,3 +1,8 @@
+# There are many ways to do this problem:-
+#   1) Using inbuilt popcount() in C++
+#   2) checking if the number (bitwise &) number-1 is zero
+  
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -22,4 +27,12 @@ int main() {
         power1(n);
     }
     return 0;
+}
+
+
+
+//Aliter: 
+
+bool isPowerofTwo(long long n){
+  return (n&(n-1) == 0);
 }
