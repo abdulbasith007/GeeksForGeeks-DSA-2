@@ -10,7 +10,7 @@ This folder contains the following problems:
 8) Gray Code
 9) Gray to Binary equivalent
 10) [Power of 2](https://github.com/FazeelUsmani/GeeksForGeeks-DSA-2/blob/master/3%20Bit%20Manipulation/3.10%20Power%20of%20two.cpp)
-11) Swap all odd and even bits
+11) [Swap all odd and even bits](https://github.com/FazeelUsmani/GeeksForGeeks-DSA-2/blob/master/3%20Bit%20Manipulation/3.11%20swap%20even%20and%20odd%20bits.py) 
 12) Maximum AND Value
 
 
