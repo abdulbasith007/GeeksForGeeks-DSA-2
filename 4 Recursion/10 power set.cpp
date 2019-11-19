@@ -15,3 +15,17 @@ vector<string> v;
 powerSet(s,v);
 return v;
 }
+
+
+
+// Python Code:
+def sub(str, output=""):
+  if len(str) == 0:
+    print(output)
+    return 
+
+  sub(str[1:], output)
+  sub(str[1:], output+str[0])  
+
+sub("ABC")
+//
