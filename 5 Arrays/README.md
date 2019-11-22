@@ -1,12 +1,12 @@
-Arrays: A collection of numbers or characters
+__Arrays:__ A collection of numbers or characters
 
-Representation: arr = [1,2,3,4,5]
+__Representation:__ arr = [1,2,3,4,5]
 
-Advantages: 
+__Advantages:__ 
 1) Random Access
 2) Cache Friendliness
 
-Disadvantages:
+__Disadvantages:__
 1) Wastage of spaace
 
 
