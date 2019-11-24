@@ -1,21 +1,23 @@
 # Maximum occured element
-def maxOccured(left,right,n,maxx):
-    
-      arr = [0 for i in range(maxx+1)]
-      for i in range(n):
-        x = left[i]
-        arr[x] += 1
-      
-      add = 0
-      for i in range(maxx+1):
-        add += arr[i]
-        arr[i] = add
+
+def maxOccured(L,R,n,maxx):
+    maxx += 5
+    arr = [0 for i in range(maxx)] 
      
-      for j in range(n):
-        y = right[j]
-        arr[y] -= 1
-     
-      return max(arr)
+    for i in range(0, n, 1): 
+        arr[L[i]] += 1
+        arr[R[i] + 1] -= 1
+  
+    # Finding prefix sum and index 
+    # having maximum prefix sum. 
+    msum = arr[0] 
+    for i in range(1, maxx, 1): 
+        arr[i] += arr[i - 1] 
+        if (msum < arr[i]): 
+            msum = arr[i] 
+            ind = i 
+            
+    return ind 
       
 T = int(input())
 for _ in range(T):
