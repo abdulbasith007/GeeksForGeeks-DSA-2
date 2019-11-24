@@ -7,6 +7,6 @@ __Advantages:__
 2) Cache Friendliness
 
 __Disadvantages:__
-1) Wastage of spaace
+1) Wastage of space
 
 
