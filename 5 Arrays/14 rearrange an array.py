@@ -32,7 +32,6 @@
 # Explanation:
 # Testcase 1: arr[0] = 1 and arr[arr[0]] = 0. Also, arr[1] = 0 and arr[arr[1]] = 1. So, rearranging elements, we get array as, 0 1.
 
-
 def arrange(arr, n): 
     
     for i in range(n):
