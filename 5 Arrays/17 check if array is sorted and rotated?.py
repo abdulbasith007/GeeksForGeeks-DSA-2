@@ -1,45 +1,31 @@
-def checkRotatedAndSorted(arr,n):
-    mini = 9999
-    for i in range(n):
-        if arr[i] < mini:
-            mini = arr[i]
-            
-    for i in range(mini, n-1):
-        if arr[i] < arr[i+1]:
-            flag = True
-        else:
-            flag = False
+import sys
+def checkRotatedAndSorted(arr, n): 
+    minEle = sys.maxsize 
+    maxEle = -sys.maxsize - 1
+    minIndex = -1
+    for i in range(n): 
+        if arr[i]< minEle: 
+            minEle = arr[i] 
+            minIndex = i 
+    flag1 = 1
+  
+    # Check if all elements before  
+    # minIndex are in increasing order 
+    for i in range(1, minIndex): 
+        if arr[i] < arr[i - 1]: 
+            flag1 = 0
             break
-        
-    for i in range(0, mini-1):
-        if arr[i] < arr[i+1]:
-            flag = True
-        else:
-            flag = False
+    flag2 = 2
+  
+    # Check if all elements after  
+    # minIndex are in increasing order 
+    for i in range(minIndex + 1, n) : 
+        if arr[i] < arr[i - 1]: 
+            flag2 = 0
             break
-        
-    maxj = -9999
-    for j in range(n):
-        if arr[j] > maxj:
-            maxj = arr[j]
-            
-    for j in range(maxj, n-1):
-        if arr[j] > arr[j+1]:
-            flag1 = True
-        else:
-            flag1 = False
-            break
-        
-    for j in range(0, maxj-1):
-        if arr[j] > arr[j+1]:
-            flag1 = True
-        else:
-            flag1 = False
-            break
-    
-    if flag or flag1:
+   
+    if (flag1 and flag2 and 
+        arr[n - 1] < arr[minIndex - 1]):
         return True
-    return False
-        
-            
-            
+    else: 
+        return False
