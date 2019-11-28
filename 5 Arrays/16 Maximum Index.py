@@ -1,4 +1,5 @@
-# Incomplete
+# Incomplete problem
+
 def maxIndexDiff(arr, n): 
     maxDiff = 0; 
     LMin = [0] * n 
