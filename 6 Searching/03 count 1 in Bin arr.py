@@ -35,3 +35,5 @@ def countOnes(arr,n):
     b = last(arr,n,1)
     
     return b-a+1
+
+# This solution on submitting give TLE, so, we need to optimize it further. Any ideas?
