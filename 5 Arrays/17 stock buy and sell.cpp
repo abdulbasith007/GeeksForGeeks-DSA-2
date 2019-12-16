@@ -1,16 +1,45 @@
-// As the Python language doesn't support zero spacing and we cannot print the expected output in the expected format, I'm writing the same solution in CPP.
-// Same as Python SOlution
-
-
-#include <stdio.h>
-
+// Program to find best buying and selling days
+#include <bits/stdc++.h>
+using namespace std;
+ 
 // solution structure
 struct Interval
 {
     int buy;
     int sell;
 };
+//Position this line where user code will be pasted.
  
+// Driver program to test above functions
+int main()
+{   
+    
+    int price[10000],n,i,T;
+    
+    scanf("%d",&T);
+    
+    while(T--){
+        
+    scanf("%d",&n);
+    
+    for(i=0;i<n;i++)
+      scanf("%d",&price[i]);
+    // fucntion call
+    stockBuySell(price, n);
+    cout<<endl;
+    }
+    return 0;
+}
+}
+/*This is a function problem.You only need to complete the function given below*/
+// solution structure
+/* struct Interval
+ {
+     int buy;
+     int sell;
+ };*/
+ 
+
 // This function finds the buy sell schedule for maximum profit
 void stockBuySell(int price[], int n)
 {
@@ -50,7 +79,7 @@ void stockBuySell(int price[], int n)
         // Increment count of buy/sell pairs
         count++;
     }
- 
+    
     // print solution
     if (count == 0)
         printf("No Profit");
@@ -59,26 +88,6 @@ void stockBuySell(int price[], int n)
        for (int i = 0; i < count; i++)
           printf("(%d %d) ", sol[i].buy, sol[i].sell);
     }
-    printf("\n");
+    //printf("\n");
     return;
-}
- 
-// Driver program to test above functions
-int main()
-{   
-    
-    int price[10000],n,i,T;
-    
-    scanf("%d",&T);
-    
-    while(T--){
-        
-    scanf("%d",&n);
-    
-    for(i=0;i<n;i++)
-      scanf("%d",&price[i]);
-    // fucntion call
-    stockBuySell(price, n);
-    }
-    return 0;
 }
